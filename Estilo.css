@@ -1,0 +1,52 @@
+html {
+    height: 100%;
+}
+body, .container {
+    height: 100%;
+    background-color: rgb(240, 240, 240);
+}
+
+.rowColumn {
+    height: 60%;
+}
+
+.banner{
+    height: 20%;
+    border-radius: 10px;
+}
+
+.bannerColum{
+    height: 50px;
+    border-radius: 5px;
+}
+
+.listItem{
+    border: 1px solid #ccc;
+    margin: 1px;
+    border-radius: 5px;
+}
+
+.listItem:hover{
+    background-color: rgb(213, 213, 213);
+}
+
+.cardContent{
+
+}
+
+span{
+    font-size: 14px;
+}
+
+p{
+    font-size: 12px;
+}
+
+.perfil{
+    border-radius: 50% 50%;
+    background-color: rgb(132, 159, 240);
+}
+
+.CorIcone{
+    color: white;
+}
