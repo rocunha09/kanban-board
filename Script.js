@@ -2,14 +2,18 @@ function moveForward(id){
     var task = document.getElementById(id)
     var arrow = document.getElementById(id)
     var item = task
-    task.remove()
     
     var colunas = ['backlog', 'toDo', 'doing', 'done'];
-
+    
     var ColunaAtual = task.getAttribute('name')
     ColunaAtual = ColunaAtual.split("_").pop()
+    if (ColunaAtual == 'done'){
+        return
+    }
+    task.remove()
     
     for(var i = 0; i < colunas.length; i++){
+       
         if (ColunaAtual == colunas[i]) {
             var proxima = i+1
             console.log(ColunaAtual + ' - ' +colunas[proxima]);
@@ -24,6 +28,7 @@ function moveForward(id){
             destino.appendChild(item);
             return;
         }
+        
     }
 }
 
@@ -31,14 +36,18 @@ function moveForward(id){
 function moveBack(id){
     var task = document.getElementById(id)
     var item = task
-    task.remove()
     
     var colunas = ['backlog', 'toDo', 'doing', 'done'];
-
+    
     var ColunaAtual = task.getAttribute('name')
     ColunaAtual = ColunaAtual.split("_").pop()
+    if (ColunaAtual == 'backlog'){
+        return
+    }
+    task.remove()
     
     for(var i = 0; i < colunas.length; i++){
+        
         if (ColunaAtual == colunas[i] && i>0) {
              var proxima = i-1
              console.log(ColunaAtual + ' - ' +colunas[proxima]);
