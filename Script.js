@@ -45,10 +45,6 @@ function moveBack(id){
     ColunaAtual = ColunaAtual.split("_").pop()
     
     for(var i = 0; i < colunas.length; i++){
-        if (ColunaAtual == 'backlog'){
-            alert('Você tem certeza que quer deletar esse card?')
-                       return;
-
         if (ColunaAtual == colunas[i] && i>0) {
              var proxima = i-1
              console.log(ColunaAtual + ' - ' +colunas[proxima]);
