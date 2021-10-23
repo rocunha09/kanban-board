@@ -73,11 +73,15 @@
             
                 <div class="row listItem mb-1" id="task1" name='task1_backlog'>
                     <div class="col cardContent">
-                        <span class="badge bg-secondary text-light">Dormir </span> 
+                        <span class="badge bg-secondary text-light">título </span> 
                         <span class="badge bg-warning text-dark">&nbsp;</span> 
-                        <span onclick="moveBack('task1')"><i class="material-icons " style="cursor: pointer;">arrow_back</i></span>
-                        <span id="task1_arrow" onclick="moveForward('task1')"><i class="material-icons " style="cursor: pointer;">arrow_forward</i></span>
-                        <p>Chegar no GIG e dormir.</p>
+                        <span onclick="movement('task1', 'back')">
+                            <i class="material-icons " style="cursor: pointer;">arrow_back</i>
+                        </span>
+                        <span id="task1_arrow" onclick="movement('task1', 'moveForward')">
+                            <i class="material-icons " style="cursor: pointer;">arrow_forward</i>
+                        </span>
+                        <p>descrição</p>
                     </div>
                     <div class="col-3 perfil d-flex justify-content-center align-items-center">
                         <h3>RC</h3>
@@ -86,11 +90,15 @@
 
                 <div class="row listItem mb-1" id="task2" name='task2_backlog'>
                     <div class="col cardContent">
-                        <span class="badge bg-secondary text-light">Dormir </span> 
+                        <span class="badge bg-secondary text-light">título </span> 
                         <span class="badge bg-success text-dark">&nbsp;</span>
-                        <span onclick="moveBack('task2')"><i class="material-icons " style="cursor: pointer;">arrow_back</i></span> 
-                        <span id="task2_arrow" onclick="moveForward('task2')"><i class="material-icons " style="cursor: pointer;">arrow_forward</i></span>
-                        <p>Chegar no GIG e dormir.</p>
+                        <span onclick="movement('task2', 'back')">
+                            <i class="material-icons " style="cursor: pointer;">arrow_back</i>
+                        </span> 
+                        <span id="task2_arrow" onclick="movement('task2', 'moveForward')">
+                            <i class="material-icons " style="cursor: pointer;">arrow_forward</i>
+                        </span>
+                        <p>descrição</p>
                     </div>
                     <div class="col-3 perfil d-flex justify-content-center align-items-center">
                         <h3>RC</h3>
@@ -99,11 +107,15 @@
                 
                 <div class="row listItem mb-1" id="task3" name='task3_backlog'>
                     <div class="col cardContent">
-                        <span class="badge bg-secondary text-light">Dormir </span>
+                        <span class="badge bg-secondary text-light">título </span>
                          <span class="badge bg-danger text-dark">&nbsp;</span> 
-                         <span onclick="moveBack('task3')"><i class="material-icons " style="cursor: pointer;">arrow_back</i></span>
-                         <span id="task3_arrow" onclick="moveForward('task3')"><i class="material-icons " style="cursor: pointer;">arrow_forward</i></span>
-                        <p>Chegar no GIG e dormir.</p>
+                         <span onclick="movement('task3', 'back')">
+                            <i class="material-icons " style="cursor: pointer;">arrow_back</i>
+                        </span>
+                         <span id="task3_arrow" onclick="movement('task3', 'moveForward')">
+                            <i class="material-icons " style="cursor: pointer;">arrow_forward</i>
+                        </span>
+                        <p>descrição</p>
                     </div>
                     <div class="col-3 perfil d-flex justify-content-center align-items-center">
                         <h3>RC</h3>
@@ -162,4 +174,3 @@
 
   </body>
 </html>
-
