@@ -17,7 +17,7 @@ function movement(id, movement){
     task.remove()
     
     for(var i = 0; i < colunas.length; i++){
-        
+ main
         if (ColunaAtual == colunas[i]) {
             var proxima = movement == 'moveForward' ? i+1 : i-1
             ColunaAtual  = colunas[proxima]
@@ -31,6 +31,7 @@ function movement(id, movement){
             destino.appendChild(item);
             return;
         }
+        
     }
 }
 
